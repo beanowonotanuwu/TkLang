@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="TkLang",
-    version="0.2.1",
+    version="0.2.5",
     author="hunterg",
     author_email="redissuslolol@gmail.com",
     description="For reading & writing .tk files",
@@ -20,5 +20,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-    install_requires = ['file-modes']
+    install_requires = ['file-modes', 'getFN']
 )

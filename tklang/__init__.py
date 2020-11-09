@@ -1,7 +1,9 @@
 ### IMPORTS                     ###
     ## Dependencies                 ##
 import filemodes as _filemodes
+import getFN as _getFN
     ## Dependencies                 ##
+import warnings as _warnings
 import os as _os
 from tkinter import *
 import xml.etree.ElementTree as _ET
@@ -94,6 +96,9 @@ _miss_attr_err = lambda attr, required=True: (
 ### LAMBDAS                     ###
 ### LOAD                        ###
 def load(src: _typing.TextIO) -> dict:
+    """
+    
+    """
     parser = _ET.XMLParser(encoding="utf-8")
     _root = _ET.parse(src, parser).getroot()
     CNF = _()
@@ -169,6 +174,23 @@ def load(src: _typing.TextIO) -> dict:
             parsed_content[attr['id']] = w
         ## Handle Tags              ##
     return parsed_content
+def write(target_path: str, tag: _typing.AnyStr) -> None:
+    """
+    
+    """
+    ## Data                         ##
+    fn = _getFN.get_filename(target_path)
+    file_ext = _getFN.get_file_ext(fn)
+    ## Data                         ##
+    ## Checks                       ##
+    assert _os.path.exists(target_path), f"Path, {target_path}, does not exist"
+    assert _os.path.isfile(target_path), f"Path, {target_path}, does not lead to a file"
+    if file_ext not in ('tk',): _warnings.warn(
+        f"file extension, {file_ext}, unapproved",
+        Warning
+    )
+    ## Checks                       ##
+    with open(target_path, _filemodes.WRITE) as f: f.write(tag)
 ### LOAD                        ###
 ### DOCUMENTATION               ###
 """

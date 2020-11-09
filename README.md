@@ -34,6 +34,7 @@
 
 ### Features
     load(src: file_name) -> dict
+    write(target_path: path_to_file, tag: tag_to_write_to_file) -> None
 
 #
 
@@ -65,6 +66,15 @@
 
 #### 0.2.1 ~ ~ 11/6/2020 15:11
 * Added Support for frames
+
+#### 0.2.2 ~ ~ 11/9/2020 8:58
+* Initialized a git repository
+* Added a .gitignore file
+
+#### 0.2.5 ~ ~ 11/9/2020 9:44
+* Updated Changelog for 0.2.2/5 changes
+* Added a write function for writing to .tk files
+> Note that the write function is in an incredibly early stage and should be used only when necessary
 
 #### 1.0.0 ~ ~ [PLANNED]
 Initial Stable Release
