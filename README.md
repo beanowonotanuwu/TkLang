@@ -76,5 +76,8 @@
 * Added a write function for writing to .tk files
 > Note that the write function is in an incredibly early stage and should be used only when necessary
 
+#### 0.2.6 ~ ~ 11/9/2020 10:02
+* Added documentation to all functions and to the module itself (__init__.py)
+
 #### 1.0.0 ~ ~ [PLANNED]
 Initial Stable Release

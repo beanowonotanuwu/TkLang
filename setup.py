@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="TkLang",
-    version="0.2.5",
+    version="0.2.6",
     author="hunterg",
     author_email="redissuslolol@gmail.com",
     description="For reading & writing .tk files",

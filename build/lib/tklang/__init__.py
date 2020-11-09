@@ -97,7 +97,7 @@ _miss_attr_err = lambda attr, required=True: (
 ### LOAD                        ###
 def load(src: _typing.TextIO) -> dict:
     """
-    
+    For loading (reading) .tk files
     """
     parser = _ET.XMLParser(encoding="utf-8")
     _root = _ET.parse(src, parser).getroot()
@@ -176,7 +176,7 @@ def load(src: _typing.TextIO) -> dict:
     return parsed_content
 def write(target_path: str, tag: _typing.AnyStr) -> None:
     """
-    
+    For writing to .tk files
     """
     ## Data                         ##
     fn = _getFN.get_filename(target_path)
@@ -194,6 +194,6 @@ def write(target_path: str, tag: _typing.AnyStr) -> None:
 ### LOAD                        ###
 ### DOCUMENTATION               ###
 """
-
+A module for reading (loading) and writing to .tk files
 """
 ### DOCUMENTATION               ###
