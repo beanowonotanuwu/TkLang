@@ -1,0 +1,7 @@
+<app>
+    <dist version="tk"/>
+    <frame id="frame1">
+        <button id="LLJ">LLJ</button>
+        <button id="LLJW">LLJW</button>
+    </frame>
+</app>

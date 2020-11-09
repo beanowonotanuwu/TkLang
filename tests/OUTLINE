@@ -1,0 +1,54 @@
+<dist version=tk/>
+
+Disturbtions:
+    tk          - Default containing all the Tk widgets (unmaintained)
+    ttk         - Allows for styling + all Tk widgets (maintained)
+    beginner    - Restricts access to more complicated widgets (maintained)
+    tkt         - Allows for use of templates 
+
+Standard Widget Options:
+    sclass=Default
+    activebackground=Default
+    activeforeground=Default
+    anchor=Default
+    background=Default
+    bitmap=Default
+    borderwidth=Default
+    cursor=Default
+    disabledforeground=Default
+    font=Default
+    foreground=Default
+    highlightbackground=Default
+    highlightcolor=Default
+    highlightthickness=Default
+    image=Default
+    justify=Default
+    padding=Default(format=PADXxPADY)
+    relief=Default
+    repeatdelay=Default
+    repeatinterval=Default
+    takefocus=Default
+    text=Default
+    textvariable=Default
+    underline=Default
+    wraplength=Default
+--------------------------------------------------------------------------------------------------------
+<button id=None*
+    command=Default
+    compound=Default
+    default=Default
+    height=Default
+    overrelief=Default
+    state=Default
+    width=Default
+>MasterID*</button>
+<checkbutton id=None*       sclass=Default>MasterID*</checkbutton>
+<radiobutton id=None*       sclass=Default>MasterID*</radiobutton>
+<spinbox id=None*           sclass=Default>MasterID*</spinbox>
+<listbox id=None*           sclass=Default>MasterID*</listbox>
+<entry id=None*             sclass=Default>MasterID*</entry>
+<text id=None*              sclass=Default>MasterID*</text>
+<menu id=None*              sclass=Default>MasterID*</menu>
+<label id=None*             sclass=Default>MasterID*</label>
+<frame id=None*             sclass=Default>MasterID*</frame>
+<labelframe id=None*        sclass=Default>MasterID</labelframe>

@@ -1,0 +1,8 @@
+README.md
+setup.py
+TkLang.egg-info/PKG-INFO
+TkLang.egg-info/SOURCES.txt
+TkLang.egg-info/dependency_links.txt
+TkLang.egg-info/requires.txt
+TkLang.egg-info/top_level.txt
+tklang/__init__.py
