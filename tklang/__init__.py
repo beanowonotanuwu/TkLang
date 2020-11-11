@@ -174,6 +174,7 @@ def load(src: _typing.TextIO) -> dict:
             parsed_content[attr['id']] = w
         ## Handle Tags              ##
     return parsed_content
+
 def write(target_path: str, tag: _typing.AnyStr) -> None:
     """
     For writing to .tk files
